@@ -7,6 +7,7 @@ import {
   ExportOutlined,
   UserOutlined,
   QuestionCircleOutlined,
+  LogoutOutlined,
 } from "@ant-design/icons";
 import Link from "next/link";
 
@@ -44,7 +45,9 @@ export default function Sidebar() {
     >
       {/* Header / Logo */}
       <div className="flex items-center justify-between p-4">
-        <div className="bg-gray-700 h-8 rounded flex-1" />
+        <div className="flex gap-2">
+          <LogoutOutlined className="text-xl" /><p className="font-semibold">ALISA</p>
+        </div>
         <button
           onClick={() => setCollapsed(!collapsed)}
           className="ml-2 text-white focus:outline-none"

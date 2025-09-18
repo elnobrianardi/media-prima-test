@@ -1,5 +1,6 @@
 "use client";
 
+import { FileImageOutlined } from "@ant-design/icons";
 import { Table } from "antd";
 
 interface Supplier {
@@ -25,10 +26,8 @@ export default function SupplierTable({ data }: SupplierTableProps) {
       render: (_: any, record: Supplier) => (
         <div className="flex items-center gap-2">
           <div className="flex flex-col items-center">
-            <div className="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center text-xs font-bold">
-              IMG
-            </div>
-            <div className="text-xs text-green-500 mt-1">✔</div>
+            <FileImageOutlined className="text-2xl" />
+            <div className="text-xs text-green-500 mt-1">SPLL</div>
           </div>
           <div className="flex flex-col">
             <span className="font-semibold">{record.name}</span>

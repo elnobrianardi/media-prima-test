@@ -13,3 +13,18 @@ export const tableData = [
   { key: "3", name: "Supplier C", id: "ID003", address: "Surabaya", contact: "08345678901", status: "Active" },
   { key: "4", name: "Supplier D", id: "ID004", address: "Yogyakarta", contact: "08456789012", status: "Active" },
 ];
+
+export const items = [
+  {key: '1', name: 'Overview' },
+  {key: '2', name: 'Assesment' },
+  {key: '3', name: 'Material Catalog' },
+  {key: '4', name: 'Orders' },
+  {key: '5', name: 'Invoices' },
+  {key: '6', name: 'Projects' },
+  {key: '7', name: 'Services' },
+  {key: '8', name: 'History' },
+]
+
+export const supplierTableData = [
+  { key: "1", id: '83E30041UK', name: 'Lenovo Yoga #83E30041UK', materialId: 'Computer / Notebook', price: 'Rp 19.000.000', priceUploadDate: '01/01/2025 10:23:01', status: 'Active' },
+];

@@ -20,8 +20,8 @@ export default function Cards({ cards }: CardsProps) {
       {cards.map((card, idx) => {
         const RightIcon = card.icon;
         return (
-          <Card key={idx} className="flex-1 min-w-[200px] md:flex rounded-md">
-            <div className="flex justify-between items-center w-full">
+          <Card key={idx} className="flex-1 min-w-[200px] rounded-md">
+            <div className="flex items-center justify-between w-full">
               <div>
                 <p className="text-gray-500">{card.title}</p>
                 <h2 className="text-2xl font-semibold">{card.value}</h2>
@@ -35,7 +35,7 @@ export default function Cards({ cards }: CardsProps) {
                   <ExportOutlined /> {card.change}
                 </p>
               </div>
-              <RightIcon className="text-4xl" />
+              <RightIcon className="text-4xl ml-auto text-gray-600" />
             </div>
           </Card>
         );

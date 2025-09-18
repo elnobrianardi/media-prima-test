@@ -1,9 +1,16 @@
-import React from 'react'
+import Breadcurmb from "@/components/Breadcurmb";
+import Logo from "@/components/Logo";
+import SupplierListTable from "@/components/SupplierListTable";
+import React from "react";
 
 const SupplierList = () => {
   return (
-    <div>SupplierList</div>
-  )
-}
+    <div>
+      <Breadcurmb/>
+      <Logo/>
+      <SupplierListTable/>
+    </div>
+  );
+};
 
-export default SupplierList
+export default SupplierList;
